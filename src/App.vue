@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="root">
+    <Header></Header>
+    <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Header,
+    Footer
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  background-color: #666;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 5%;
+  background-color: #2d3436;
+}
+/* PC端 */
+@media screen and (min-width: 820px) {
+  #root {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* 移动端 */
+@media screen and (max-width: 820px) {
+  /*  主容器 */
+  #root {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 </style>

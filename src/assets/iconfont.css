@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('./fonts/iconfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('./font2/iconfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('./font2/iconfont2.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangxia:before {
+  content: "\f02a9";
+}
+
+.icon-new:before {
+  content: "\e71e";
+}
+
+.icon-shouye:before {
+  content: "\e751";
+}
+
+.icon-houtaiguanli:before {
+  content: "\e665";
+}
+
+.icon-hot:before {
+  content: "\e65a";
+}
+
+.icon-sousuoxiao:before {
+  content: "\e8d6";
+}
+
+.icon-weixin:before {
+  content: "\e66c";
+}
+
+.icon-weibo-copy:before {
+  content: "\e65a";
+}
+
+.icon-QQ-circle-fill:before {
+  content: "\e887";
+}
+
+.icon-a-youjianchakanyoujianfasongyoujianshouyoujian-06:before {
+  content: "\e918";
+}
+
+
